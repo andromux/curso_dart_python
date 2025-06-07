@@ -1,0 +1,34 @@
+name: python_course_app
+description: "A new Flutter project."
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.7.2 <4.0.0' # Good practice to specify an upper bound for the SDK
+
+dependencies:
+  flutter:
+    sdk: flutter # This is correct: 'flutter' is sourced from the 'sdk'
+  highlight: ^0.7.0         # <-- This line was indented incorrectly
+  flutter_highlight: ^0.7.0 # <-- This line was indented incorrectly
+  cupertino_icons: ^1.0.8
+  url_launcher: ^6.3.0
+  flutter_launcher_icons: ^0.14.3
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+
+flutter:
+  uses-material-design: true
+
+# ... (resto de tu pubspec.yaml, incluyendo la sección 'flutter:')
+
+flutter_launcher_icons:
+  android: "launcher_icon" # Nombre del archivo del icono en Android (sin extensión)
+  image_path: "assets/app_icon.png" # Ruta a tu imagen de icono
+  min_sdk_android: 21       # Versión mínima de Android que soporta tu app (generalmente 21)
+  background_color: "#ffffff" # Opcional: Color de fondo si remueves el alfa en iOS o para iconos adaptativos
+  foreground_image: "assets/app_icon.png" # Opcional: si usas iconos adaptativos en Android
