@@ -5,13 +5,13 @@ publish_to: 'none'
 version: 1.0.0+1
 
 environment:
-  sdk: '>=3.7.2 <4.0.0' # Good practice to specify an upper bound for the SDK
+  sdk: '>=3.7.2 <4.0.0'
 
 dependencies:
   flutter:
-    sdk: flutter # This is correct: 'flutter' is sourced from the 'sdk'
-  highlight: ^0.7.0         # <-- This line was indented incorrectly
-  flutter_highlight: ^0.7.0 # <-- This line was indented incorrectly
+    sdk: flutter
+  highlight: ^0.7.0
+  flutter_highlight: ^0.7.0
   cupertino_icons: ^1.0.8
   url_launcher: ^6.3.0
   flutter_launcher_icons: ^0.14.3
@@ -24,7 +24,6 @@ dev_dependencies:
 flutter:
   uses-material-design: true
 
-# ... (resto de tu pubspec.yaml, incluyendo la sección 'flutter:')
 
 flutter_launcher_icons:
   android: "launcher_icon" # Nombre del archivo del icono en Android (sin extensión)
